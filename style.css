@@ -160,6 +160,8 @@ body {
         margin-bottom: 10px;
         background-color: orange;
         text-align: center;
+        font-weight:bolder;
+        font-size: 20px;
 }
 .topper-per {
     border: 2px solid rgb(245, 243, 243);
@@ -167,8 +169,10 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #1742aa;
-    color: yellowgreen;
+    color: rgb(236, 238, 231);
     text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
 }
 .topper-name:hover {
     background-color: #1742aa;
@@ -180,7 +184,7 @@ body {
     color: black;
 
 }
-.outer-circle{
+/* .outer-circle{
     border: 1px solid rgb(245, 24, 24);
         width: 77px;
         height: 77px;
@@ -188,7 +192,7 @@ body {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        /* animation: spinner 10s linear infinite; */
+        /* animation: spinner 10s linear infinite; 
         
 }
 
@@ -200,18 +204,20 @@ body {
      100% {
          transform: rotate(0deg);
      }
- }
+ } */
 .result-circle{
    
     border: 2px solid #1742aa;   
-    width: 75px;
-    height: 75px;    
+    width: 100px;
+    height: 100px;    
     text-align: center;
     align-items: center;
     justify-content: center;    
     border-radius: 50%;
     background-color: #1742aa;
     color: white;
+    font-size: 20px;
+    font-weight: bolder;
 
 
 }
