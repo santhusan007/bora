@@ -21,10 +21,11 @@ body {
 .main-div {
     display: flex;
     flex-direction: row;
-    gap: 50px;    
+    gap: 30px;    
     align-items: center;
-    justify-content: center;    
-    padding: 50px;
+    justify-content: center;  
+      
+    padding: 30px;
     flex-wrap: wrap;
     text-align: center;
   
@@ -50,6 +51,12 @@ body {
     box-shadow: rgba(114, 114, 244, 0.25) 0px 50px 100px -20px, rgba(219, 217, 217, 0.3) 0px 30px 60px -30px, rgba(246, 247, 248, 0.35) 0px -2px 6px 0px inset;
     
     
+}
+.flex-style{
+   box-shadow:3px 3px 12px 0 rgb(0 0 0 / 10%);
+    padding:70px 50px; 
+    border-radius:20px; 
+    border:1px solid #1742aa 
 }
 
 .img-responsive{
@@ -146,14 +153,65 @@ body {
     flex-wrap: wrap;
 
 }
+.topper-name{
+    border: 2px solid rgb(245, 243, 243);
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: orange;
+        text-align: center;
+}
+.topper-per {
+    border: 2px solid rgb(245, 243, 243);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1742aa;
+    color: yellowgreen;
+    text-align: center;
+}
+.topper-name:hover {
+    background-color: #1742aa;
+    color: white;
+
+}
+.topper-per:hover{
+    background-color: orange;
+    color: black;
+
+}
+.outer-circle{
+    border: 1px solid rgb(245, 24, 24);
+        width: 77px;
+        height: 77px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /* animation: spinner 10s linear infinite; */
+        
+}
+
+ @keyframes spinner {
+     50% {
+         transform: rotate(360deg);
+     }
+
+     100% {
+         transform: rotate(0deg);
+     }
+ }
 .result-circle{
-    border: 1px solid black;
+   
+    border: 2px solid #1742aa;   
     width: 75px;
     height: 75px;    
     text-align: center;
     align-items: center;
     justify-content: center;    
     border-radius: 50%;
-        
+    background-color: #1742aa;
+    color: white;
+
 
 }
