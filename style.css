@@ -7,15 +7,11 @@
 
 body {
 
-    background-color: #1742aa;
+    background-color: white;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
-    color: white;
+    color: black;
    
 
 
@@ -23,7 +19,13 @@ body {
 
 
 .main-div {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;    
+    align-items: center;
+    justify-content: center;    
+    padding: 50px;
+    flex-wrap: wrap;
     text-align: center;
   
     
@@ -100,7 +102,7 @@ body {
  background-color: #FF9980
 }
 
-  .socialswa {
+.socialswa {
       width: 100px;
       height: 50px;
       /*background-color: #e46c0a;*/
@@ -110,8 +112,8 @@ body {
       bottom: 10px;
       z-index: 20;
   }
-        .socialswebsite {
-            width: 100px;
+.socialswebsite {
+         width: 100px;
             height: 50px;
             /*background-color: #e46c0a;*/
             border-radius: 30px 0 0 30px;
@@ -119,4 +121,34 @@ body {
             right: 2px;
             bottom: 10px;
             z-index: 20;
-        }
+}
+.topper-div{
+
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.result-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.result-circle{
+    border: 1px solid black;
+    width: 75px;
+    height: 75px;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 50%;
+        
+
+}
