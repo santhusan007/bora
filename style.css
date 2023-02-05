@@ -162,6 +162,7 @@ body {
         text-align: center;
         font-weight:bolder;
         font-size: 20px;
+        animation: gradient-shadow .8s infinite alternate ;
 }
 .topper-per {
     border: 2px solid rgb(245, 243, 243);
@@ -173,6 +174,7 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: 20px;
+    animation: gradient-shadow .5s  infinite alternate;
 }
 .topper-name:hover {
     background-color: #1742aa;
@@ -211,6 +213,7 @@ body {
     width: 125px;
     height: 125px;    
     text-align: center;
+    border: 2px solid rgb(245, 243, 243);
     align-items: center;
     justify-content: center;    
     border-radius: 50%;
@@ -229,5 +232,37 @@ body {
 
     to {
         box-shadow: 0 0 10px 5px #07ab0c;
+    }
+}
+
+@keyframes gradient-shadow {
+    0% {
+      
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+    }
+
+    20% {
+      
+        box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    }
+
+    40% {
+       
+        box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+    }
+
+    60% {
+       
+        box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    }
+
+    80% {
+        
+        box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    }
+
+    100% {
+        
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
     }
 }
