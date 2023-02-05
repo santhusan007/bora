@@ -208,16 +208,26 @@ body {
 .result-circle{
    
     border: 2px solid #1742aa;   
-    width: 100px;
-    height: 100px;    
+    width: 125px;
+    height: 125px;    
     text-align: center;
     align-items: center;
     justify-content: center;    
     border-radius: 50%;
     background-color: #1742aa;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
+    animation: glow .3s infinite alternate;
 
+}
 
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -5px #0bf10e;
+    }
+
+    to {
+        box-shadow: 0 0 10px 5px #07ab0c;
+    }
 }
