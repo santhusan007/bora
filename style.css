@@ -13,9 +13,6 @@ body {
     color: black;
     width: 100%;
         height: 100vh;
-    
-   
-
 
 }
 
@@ -23,10 +20,10 @@ body {
 .main-div {
     display: flex;
     flex-direction: column;
-    gap: 30px;    
+    gap: 10px;    
     align-items: center;
-    justify-content: center;        
-    padding: 30px;
+    justify-content:center;        
+    padding: 10px;
     flex-wrap: wrap;
     text-align: center;
   
@@ -34,8 +31,8 @@ body {
 }
 
 .main-div img{
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 75px;
     
 }
 
@@ -163,30 +160,15 @@ body {
         text-align: center;
         font-weight:bolder;
         font-size: 20px;
-        animation: gradient-shadow .8s infinite alternate ;
+        animation: gradient-shadow 3s infinite alternate ;
 }
-.topper-per {
-    border: 2px solid rgb(245, 243, 243);
-    border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #1742aa;
-    color: rgb(236, 238, 231);
-    text-align: center;
-    font-weight: bolder;
-    font-size: 20px;
-    animation: gradient-shadow .5s  infinite alternate;
-}
+
 .topper-name:hover {
     background-color: #1742aa;
     color: white;
 
 }
-.topper-per:hover{
-    background-color: orange;
-    color: black;
 
-}
 /* .outer-circle{
     border: 1px solid rgb(245, 24, 24);
         width: 77px;
@@ -198,6 +180,7 @@ body {
         /* animation: spinner 10s linear infinite; 
         
 }
+
 
  @keyframes spinner {
      50% {
@@ -213,17 +196,24 @@ body {
     border: 2px solid #1742aa;   
     width: 125px;
     height: 125px;    
+    padding-top: 6px;
     text-align: center;
     border: 2px solid rgb(245, 243, 243);
     align-items: center;
     justify-content: center;    
     border-radius: 50%;
     background-color: #1742aa;
-    color: white;
-    font-size: 25px;
+    color: #ddf103;
+    font-size: 40px;
     font-weight: bolder;
+    line-height: 35px;
     animation: glow .3s infinite alternate;
 
+}
+@keyframes mymove {
+    50% {
+        box-shadow: 20px 20px 10px 20px #1742aa;
+    }
 }
 
 @keyframes glow {
