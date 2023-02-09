@@ -143,6 +143,11 @@ body {
             bottom: 10px;
             z-index: 20;
 }
+.admissions{
+   
+        /* referring directly to the animation's @keyframe declaration */
+        animation: jello 2s infinite 
+}
 .topper-div{
     padding: 25px 25px 25px 25px;
     display: flex; 
