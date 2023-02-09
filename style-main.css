@@ -843,8 +843,8 @@ section {
 
 section>.container,
 section>.container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* -------- Background Video ---------- */
