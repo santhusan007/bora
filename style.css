@@ -157,7 +157,7 @@ body {
 .admissions{
    
         /* referring directly to the animation's @keyframe declaration */
-        animation: jello 2s infinite 
+        animation: bounceIn .8s infinite 
 }
 .topper-div{
     padding: 25px 25px 25px 25px;
