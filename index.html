@@ -44,15 +44,10 @@
   <header style="background-color: #093869;color: white;background:#093869 ;">
     <div class="main-div">
 
-      <div style="margin-left: 0;">
-        <img src="logo.png" alt="">
+
+      <img src="logo2.png" alt="">
 
 
-
-
-        <span class="typewrite wrap" style="font-size:10px;font-weight: bolder;" data-period="1000"
-          data-type='[ "A highly reputed class from last 40 years." ]'></span>
-      </div>
     </div>
 
 
@@ -71,20 +66,21 @@
       <div class="topper-div">
         <h2 style=" color: #a5cd39;;font-size: 30px;font-weight: bolder;">SSC Result 2022
         </h2>
-        <div><img style="width: 250px; height: 250px;" src="topper.png" alt="">
+        <div style="border: 2px solid white;padding: 25px 25px 25px 25px;border-radius: 20px;"><img
+            style="width: 250px; height: 250px;" src="topper.png" alt="">
 
           <div class="topper-name" style="margin-top: 5px;">
             Anirudh Rajguru-98.4%</div>
         </div>
 
-
-        <div class=" result-circle">
-          86 &nbsp;<span style="font-size: 15px;color: white;">Above&nbsp;&nbsp;&nbsp;
-            90%</span></div>
-        <div class=" result-circle">
-          308 &nbsp;<span style="font-size: 15px;color: white">Above&nbsp;&nbsp;&nbsp;
-            80%</span></div>
-
+        <div class="circle-div">
+          <div class=" result-circle">
+            86 &nbsp;<span style="font-size: 15px;color: white;">Above&nbsp;&nbsp;&nbsp;
+              90%</span></div>
+          <div class=" result-circle">
+            308 &nbsp;<span style="font-size: 15px;color: white">Above&nbsp;&nbsp;&nbsp;
+              80%</span></div>
+        </div>
 
 
       </div>
@@ -93,20 +89,24 @@
       <div class="login">
         <div class="form">
           <h2>contact us</h2>
-          <input type="text" placeholder="Name">
-          <input type="tel" placeholder="Phone Number">
-          <select name="dropdown">
-            <option value="Computer Architecture" selected>Select Std</option>
-            <option value="Java">Std 8th</option>
-            <option value="Discrete Mathematics">Std 9th</option>
-            <option value="Discrete Mathematics">Std 10th</option>
+          <form action="https://formsubmit.co/511santhosh@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://santhusan007.github.io/bora">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="tel" placeholder="Phone Number" name="Phone Number" required>
+            <select name="Std">
+              <option value="Std Not Selected" selected>Select Std</option>
+              <option value="Std 8th">Std 8th</option>
+              <option value="Std 9th">Std 9th</option>
+              <option value="Std 10th">Std 10th</option>
+              <input type="hidden" name="_captcha" value="false">
+            </select>
 
-          </select>
-
-          <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" name="email" required>
 
 
-          <input type="submit" value="Apply now" class="submit">
+            <input class="my-submit submit" type="submit" value="Apply now">
+
+          </form>
         </div>
       </div>
     </div>
@@ -398,68 +398,12 @@
     </div>
   </footer>
 
-
-  <script>
-    var TxtType = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-      var that = this;
-      var delta = 50 - Math.random() * 50;
-
-      if (this.isDeleting) { delta /= 1.5; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 10;
-      }
-
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
-
-    window.onload = function () {
-      var elements = document.getElementsByClassName('typewrite');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".typewrite > .wrap { color:white,border-right: 10px solid white}";
-      document.body.appendChild(css);
-    };
   </script>
   <script>
     AOS.init();
   </script>
+
+
 
 
 
